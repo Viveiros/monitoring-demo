@@ -8,8 +8,10 @@ spring:
 
 management:
   health:
+    mongo:
+      enabled: true
     diskspace:
-      enabled: false
+      enabled: true
   endpoint:
     health:
       show-details: always
@@ -17,6 +19,7 @@ management:
     web:
       exposure:
         include: '*'
+
 
 info:
   app:
